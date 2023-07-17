@@ -1,0 +1,120 @@
+/* *{ 
+    margin: 0;
+    padding: 0;
+}
+
+.circles {
+  background-color: blueviolet;   
+  border-radius: 50px;
+  width: 150px;
+  height: 100px;
+  margin: 15px 5px 0 30 px;
+}
+
+#circles {
+    background-color: black;
+}
+
+.list-items {
+    list-style-type: upper-roman;
+}
+
+
+ /*квадратные скобки это атрибут селектора*/
+/*font-weight жирность текста*/
+/* span[lang] {
+    font-weight: bold; 
+}
+
+span[lang="pt"] {
+    color: chartreuse;
+}
+
+/* $ - обращение в конец записи*/
+/* a[href$=".cn"] {
+    color: orange;
+}
+
+
+div[class*="exam"] {
+    background-color: fuchsia;
+}
+
+/* ^ - отвечает за начало записи*/
+/* a[href^="#"] {
+    background-color: aqua;
+}
+
+/* > - обращение именно на то что находится внутри div*/
+/* div > p {
+    color: yellow; 
+} */
+
+/*выбирает те элементы которые являются дочерними элементами*/
+
+/*Главная ось определяется свойством flex-direction, которая приниямает одно из нескольких значений:
+- row
+- row - reverse
+- column
+- column - reverse*/
+
+/*flex-wrap - параметр который используется, когда элементы будут слишком большими для того, чтобы влезать на одну строчку, они будут переносится на новую строчку */
+
+/*justify - content -  определяет,как браузер расспределяет пространство
+между и вокруг элементов вдоль главной оси flex контейнера*/
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  height: 100vh;
+  /* justify-content: center; */
+  /*-justify-content: start; выравнивание элементов в начале */
+  /*justify-content: end;*/
+  /*justify-content: left;*/
+  /*justify-content: right;* -*/
+  /*justify-content: flex-start; - выравнивание элементов в начале в зависимости от её направления (flex-direction) */
+  /*justify-content: flex-end;*/
+  /* justify-content: space-between; -расстояние между каждой парой соседних элементов равны. Первый элемент прижат к началу по главной оси, а последний - к концу*/
+  /* justify-content: space-around; -расстояние между каждой парой соседних элементов равны. Пустые пространства перед первым элементом и после последнего элемента равны половине расстояния между парами соседних элементов*/
+  justify-content: space-evenly; /* -расстояние между каждой парой соседних элементов равны растояниям от начала до первого элемента и от последнего элемента до конца */
+
+  /* align-items *
+  /* align-items: flex-start; */
+  align-items: center;
+
+  /*flex-direction: row-reverse*/
+  /*flex-direction: column*/
+  /*flex-direction: column-reverse;*/
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: blueviolet;
+  margin: 10px;
+  color: black;
+  font-size: 70px;
+}
+
+.box:nth-child(6) {
+  order: 3;
+}
+
+.box:nth-child(5) {
+  order: 2;
+}
+
+.box:nth-child(4) {
+  order: 1;
+}
+
+#box3 {
+  background-color: chartreuse;
+}
+
+div ul {
+  display: flex;
+  justify-content: space-between;
+}
